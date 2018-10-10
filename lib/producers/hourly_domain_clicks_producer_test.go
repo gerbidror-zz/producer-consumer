@@ -3,12 +3,10 @@ package producers
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/gerbidror/producer-consumerlib/distributed-cache"
+	"github.com/gerbidror/producer-consumer/lib/distributed-cache"
 	"github.com/gerbidror/producer-consumer/models"
 	"time"
 	"github.com/bluele/go-timecop"
-	"github.com/gerbidror/producer-consumer/lib/distributed-cache"
-	"producer-consumer/lib/distributed-cache"
 )
 
 var _ = Describe("Test HourlyDomainClicksConsumer", func() {

@@ -4,7 +4,7 @@ import (
 	"time"
 	"errors"
 	"fmt"
-	"github.com/gerbidror/producer-consumerlib/settings"
+	"github.com/gerbidror/producer-consumer/lib/settings"
 )
 
 const mutexTTL = 2 * time.Second

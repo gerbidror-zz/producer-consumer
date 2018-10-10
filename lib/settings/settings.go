@@ -10,7 +10,7 @@ func init() {
 	Conf = viper.New()
 	Conf.SetConfigType("json")
 	Conf.SetConfigName("settings")
-	Conf.AddConfigPath("$HOME/go/src/github.com/gerbidror/producer-consumerconf")
+	Conf.AddConfigPath("$HOME/go/src/github.com/gerbidror/producer-consumer/conf")
 	if err := Conf.ReadInConfig(); err != nil {
 		panic(err)
 	}

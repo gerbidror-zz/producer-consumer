@@ -5,7 +5,7 @@ import (
 	"gopkg.in/redis.v5"
 	"github.com/bluele/go-timecop"
 	"fmt"
-	"github.com/gerbidror/producer-consumerlib/settings"
+	"github.com/gerbidror/producer-consumer/lib/settings"
 )
 
 const priorityQueueKey = "priority_queue_key"

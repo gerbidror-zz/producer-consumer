@@ -232,11 +232,11 @@ var _ = Describe("Test redis hourly priority queue mutex", func() {
 			var zValue redis.Z
 
 			BeforeEach(func() {
-				scoreTime := timecop.Now().Add(2*time.Hour)
+				scoreTime := timecop.Now().Add(2 * time.Hour)
 				member := "a1"
 				zValue = redis.Z{Score: priorityQueue.convertTimeToPriorityScore(scoreTime), Member: member}
 				Expect(RedisClientInstance.ZAdd(priorityQueueKey, zValue).Err()).NotTo(HaveOccurred())
-				newTime := timecop.Now().Add(2*time.Hour + 5 * time.Minute)
+				newTime := timecop.Now().Add(2*time.Hour + 5*time.Minute)
 				timecop.Freeze(newTime)
 			})
 
@@ -263,7 +263,7 @@ var _ = Describe("Test redis hourly priority queue mutex", func() {
 					Expect(RedisClientInstance.ZAdd(priorityQueueKey, zValue).Err()).NotTo(HaveOccurred())
 					zValues = append(zValues, zValue)
 				}
-				newTime := timecop.Now().Add(2*time.Hour + 5 * time.Minute)
+				newTime := timecop.Now().Add(2*time.Hour + 5*time.Minute)
 				timecop.Freeze(newTime)
 			})
 

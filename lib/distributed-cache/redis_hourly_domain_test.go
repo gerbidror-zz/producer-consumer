@@ -6,7 +6,6 @@ import (
 	"github.com/gerbidror/producer-consumer/models"
 	"time"
 	"encoding/json"
-	"github.com/gerbidror/producer-consumer/models"
 )
 
 var _ = Describe("Test redis hourly domain", func() {
@@ -17,8 +16,8 @@ var _ = Describe("Test redis hourly domain", func() {
 	Describe("Test GetHourlyDomainKey", func() {
 		var (
 			domain string
-			key string
-			hour int64
+			key    string
+			hour   int64
 		)
 
 		JustBeforeEach(func() {
@@ -52,8 +51,8 @@ var _ = Describe("Test redis hourly domain", func() {
 			BeforeEach(func() {
 				key = "a"
 				hdc = &models.HourlyDomainClicks{
-					Domain: "domain",
-					Hour: time.Time{},
+					Domain:    "domain",
+					Hour:      time.Time{},
 					NumClicks: 5,
 				}
 			})
@@ -72,10 +71,10 @@ var _ = Describe("Test redis hourly domain", func() {
 
 	Describe("Test GetUnsafeHourlyDomainValue", func() {
 		var (
-			key string
-			hdc *models.HourlyDomainClicks
+			key      string
+			hdc      *models.HourlyDomainClicks
 			expected *models.HourlyDomainClicks
-			err error
+			err      error
 		)
 
 		JustBeforeEach(func() {
@@ -97,8 +96,8 @@ var _ = Describe("Test redis hourly domain", func() {
 			BeforeEach(func() {
 				key = "a"
 				expected = &models.HourlyDomainClicks{
-					Domain: "domain",
-					Hour: time.Time{},
+					Domain:    "domain",
+					Hour:      time.Time{},
 					NumClicks: 5,
 				}
 				marshaledVal, err := json.Marshal(*expected)

@@ -2,7 +2,7 @@ package main
 
 import (
 	"time"
-	"lib/settings"
+	"github.com/gerbidror/producer-consumer/lib/settings"
 	"github.com/gerbidror/producer-consumer/models"
 	"github.com/gerbidror/producer-consumer/lib/distributed-cache"
 	"github.com/gerbidror/producer-consumer/lib/consumers"

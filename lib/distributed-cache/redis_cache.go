@@ -3,7 +3,7 @@ package distributedcache
 import (
 	"gopkg.in/redis.v5"
 	"fmt"
-	"github.com/gerbidror/producer-consumerlib/settings"
+	"github.com/gerbidror/producer-consumer/lib/settings"
 )
 
 var RedisClientInstance *redis.Client

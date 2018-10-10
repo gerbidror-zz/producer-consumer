@@ -1,7 +1,7 @@
 package consumers
 
 import (
-	"github.com/gerbidror/producer-consumerlib/distributed-cache"
+	"github.com/gerbidror/producer-consumer/lib/distributed-cache"
 	"time"
 	"github.com/Sirupsen/logrus"
 	"github.com/gerbidror/producer-consumer/models"

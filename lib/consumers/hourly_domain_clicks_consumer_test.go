@@ -3,7 +3,7 @@ package consumers
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/gerbidror/producer-consumerlib/distributed-cache"
+	"github.com/gerbidror/producer-consumer/lib/distributed-cache"
 	"github.com/gerbidror/producer-consumer/models"
 	"fmt"
 	"time"

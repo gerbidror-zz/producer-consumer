@@ -1,12 +1,11 @@
 package producers
 
 import (
-	"github.com/gerbidror/producer-consumerlib/parsers"
+	"github.com/gerbidror/producer-consumer/lib/parsers"
 	"github.com/gerbidror/producer-consumer/models"
 	"time"
-	"github.com/gerbidror/producer-consumerlib/distributed-cache"
-	"github.com/Sirupsen/logrus"
 	"github.com/gerbidror/producer-consumer/lib/distributed-cache"
+	"github.com/Sirupsen/logrus"
 )
 
 type HourlyDomainClicksProducer struct {
