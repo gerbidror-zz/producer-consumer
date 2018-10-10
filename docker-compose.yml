@@ -1,9 +1,12 @@
-version: "3"
+version: '2'
 services:
-  app:
-    image: golang:1.11-alpine
+  producer-consumer:
     build: .
+    # depends_on:
+    # - redis
+    # build: .
+    # command: go run main.go
   redis:
     image: "redis"
     ports:
-      - "6380:6380"
+    - "6380:6380"
