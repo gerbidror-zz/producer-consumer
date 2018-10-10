@@ -11,6 +11,6 @@ const RedisNilErrMsg = "redis: nil"
 
 func NewRedisClient() *redis.Client {
 	return redis.NewClient(&redis.Options{
-		Addr: fmt.Sprintf("localhost:%d", settings.Conf.GetInt("redis_port")),
+		Addr: fmt.Sprintf("0.0.0.0:%d", settings.Conf.GetInt("redis_port")),
 	})
 }
