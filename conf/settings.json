@@ -4,5 +4,5 @@
   "wait_time_before_consuming_data_in_minutes": 1,
   "priority_queue_key": "priority_queue_key",
   "consume_data_paths": ["./lib/parsers/data/page_view_data_1.txt", "./lib/parsers/data/page_view_data_2.txt"],
-  "redis_port": 6380
+  "redis_port": 6379
 }

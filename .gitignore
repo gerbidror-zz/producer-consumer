@@ -1,0 +1,9 @@
+.idea
+/vendor
+{|PROJECTNAME|}
+producer-consumer
+.tags*
+log
+coverage.txt
+**/*.coverprofile
+*________________*
