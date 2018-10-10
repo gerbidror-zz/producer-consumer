@@ -2,8 +2,6 @@ version: '2'
 services:
   producer-consumer:
     build: .
-    links:
-    - redis
   redis:
     image: "redis"
     ports:
