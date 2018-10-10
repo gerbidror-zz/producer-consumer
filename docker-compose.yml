@@ -5,8 +5,8 @@ services:
     links:
     - redis
     environment:
-      REDIS_URL: redis:6380
+      REDIS_URL: redis:6379
   redis:
     image: "redis"
     ports:
-    - "6380:6380"
+    - "6379:6379"
