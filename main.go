@@ -11,8 +11,6 @@ import (
 )
 
 func main() {
-	//fmt.Println("@@@@@@")
-
 	priorityQueueRedisKey := settings.Conf.GetString("priority_queue_key")
 	outputChannel := make(chan *models.HourlyDomainClicks, 10)
 	redisHourlyPriorityQueue := distributedcache.NewRedisPriorityQueue(priorityQueueRedisKey)

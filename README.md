@@ -12,7 +12,7 @@ Before starting this project please update conf/settings.json values as needed:
 * wait_time_before_consuming_data_in_minutes - integer containing the the number of minutes to wait before each tick of the consumer.
 * priority_queue_key - string the key for redis priority queue.
 * consume_data_paths - string array of paths for page view data, the start position is the project.
-* redis_port - integer containing the port number of redis, in case of changing this value, please make sure to change the port in docker-compose.yml as well.
+* local_redis_port - integer containing the local port number of redis for local run (not in docker).
 
 ## Run project locally
 * Make sure redis is up and running on port 6380.
@@ -22,4 +22,5 @@ Before starting this project please update conf/settings.json values as needed:
 
 ## Run project using docker
 * download docker
+* if needed, the port number of redis can be modified
 * run: "docker-compose up"
