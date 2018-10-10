@@ -2,10 +2,8 @@ version: '2'
 services:
   producer-consumer:
     build: .
-    # depends_on:
-    # - redis
-    # build: .
-    # command: go run main.go
+    links:
+    - redis
   redis:
     image: "redis"
     ports:
