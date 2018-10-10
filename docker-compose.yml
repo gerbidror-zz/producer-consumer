@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    image: golang:1.11-alpine
+    build: .
+  redis:
+    image: "redis"
+    ports:
+      - "6380:6380"

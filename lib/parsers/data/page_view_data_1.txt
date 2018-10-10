@@ -1,0 +1,13 @@
+{"UserId": 1, "Domain": "test.com", "Path": "/signin", "Timestamp": "2018-10-01 10:00:01", "NumClicks": 3}
+{"UserId": 3, "Domain": "test.com", "Path": "/signin", "Timestamp": "2018-10-01 10:00:01", "NumClicks": 2}
+{"UserId": 2, "Domain": "test.com", "Path": "/signin", "Timestamp": "2018-10-01 10:00:10", "NumClicks": 2}
+{"UserId": 1, "Domain": "px.com", "Path": "/signin", "Timestamp": "2018-10-01 10:00:01", "NumClicks": 3}
+{"UserId": 3, "Domain": "test.com", "Path": "/signin", "Timestamp": "2018-10-01 10:00:01", "NumClicks": 3}
+{"UserId": 1, "Domain": "px.com", "Path": "/checkout", "Timestamp": "2018-10-01 10:01:05", "NumClicks": 9}
+{"UserId": 1, "Domain": "px.com", "Path": "/checkout", "Timestamp": "2018-10-01 10:01:17", "NumClicks":9}
+{"UserId": 1, "Domain": "test.com", "Path": "/signin", "Timestamp": "2018-10-01 10:01:28", "NumClicks": 6}
+{"UserId": 2, "Domain": "px.com", "Path": "/signin", "Timestamp": "2018-10-01 10:02:11", "NumClicks": 3}
+{"UserId": 1, "Domain": "test.com", "Path": "/signin", "Timestamp": "2018-10-01 10:02:22", "NumClicks": 8}
+{"UserId": 3, "Domain": "px.com", "Path": "/signin", "Timestamp": "2018-10-01 10:02:50", "NumClicks": 0}
+{"UserId": 3, "Domain": "px.com", "Path": "/signin", "Timestamp": "2018-10-01 10:02:19", "NumClicks": 2}
+{"UserId": 1, "Domain": "px.com", "Path": "/signin", "Timestamp": "2018-10-01 10:02:58", "NumClicks": 2}

@@ -1,0 +1,2 @@
+{"UserId": 2, "Domain": "px.com", "Path": "/checkout", "Timestamp": "2018-10-01 10:00:03", "NumClicks": 5}
+{"UserId": 1, "Domain": "test.com", "Path": "/signin", "Timestamp": "2018-10-01 10:00:31", "NumClicks": 11}
