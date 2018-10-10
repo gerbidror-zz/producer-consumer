@@ -20,6 +20,10 @@ Before starting this project please update conf/settings.json values as needed:
 * download the dependencies using dep: dep ensure -v 
 * compile and run: "go build" + "go run main.go"
 
+## Run project's tests
+* The project's tests are written in ginkgo.
+* We can run them by using the following command: `APP_ENV=test APP_CONF_PATH=$(pwd)/conf ginkgo --randomizeAllSpecs  --randomizeSuites --failOnPending --cover --trace --compilers=2 --race -r`
+
 ## Run project using docker
 * download docker
 * if needed, the port number of redis can be modified
